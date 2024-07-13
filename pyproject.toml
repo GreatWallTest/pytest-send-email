@@ -1,0 +1,31 @@
+[project]
+name = "pytest-send-email"
+version = "0.1.0"
+description = "Default template for PDM package"
+authors = [
+    {name = "", email = ""},
+    {name = "我太想进步了", email = "714671267@qq.com"},
+]
+dependencies = [
+    "pytest>=8.2.2",
+    "requests>=2.32.3",
+    "black>=24.4.2",
+    "isort>=5.13.2",
+]
+requires-python = ">=3.10"
+readme = "README.md"
+license = {text = "MIT"}
+
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
+
+[tool.pdm]
+distribution = true
+test = 'pytest'
+[tool.pdm.dev-dependencies]
+dev = [
+    "black>=24.4.2",
+    "isort>=5.13.2",
+    "flake8>=7.1.0",
+]
